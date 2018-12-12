@@ -17,8 +17,8 @@ Conveniently work with joda `DateTime` and Java `Calendar` (and also `java.sql.T
 The same example works also for Java `Calendar`. Different date-time patterns can be used.
 ## Features
 
-* Implicit conversion between joda DateTime and java Calendar
-* Creation of DateTime objects from Strings:
+* Implicit conversion between joda `DateTime` and Java `Calendar`
+* Creation of `DateTime` objects from Strings:
 ```scala
   // Parse by one of the default patterns (defaults can be modified):
   val dateTime: DateTime = %%("01/02/2012 24:01:02")
@@ -26,7 +26,7 @@ The same example works also for Java `Calendar`. Different date-time patterns ca
   val dateTime2: DateTime = %%("Feb-01-2012", "MMM-dd-yyyy")
 ```
 
-* Creation of Strings from DateTime objects:
+* Creation of Strings from `DateTime` objects:
 ```scala
   // According to default pattern (defaults can be modified):
   val timeStr: String = %%(new DateTime())
@@ -34,7 +34,7 @@ The same example works also for Java `Calendar`. Different date-time patterns ca
   val timeStr2: String = %%(new DateTime(), "MMM-dd-yyyy")
 ```
 
-* Addition/subtraction of time units to DateTime:
+* Addition/subtraction of time units to `DateTime`:
 ```scala
   val dateTime1: DateTime = ...
   val dateTime2: DateTime = dateTime1 + 5 days
@@ -42,7 +42,7 @@ The same example works also for Java `Calendar`. Different date-time patterns ca
   val dateTime4: DateTime = dateTime1 - 5 seconds
 ```
 
-* Comparison of DateTime objects:
+* Comparison of `DateTime` objects:
 ```scala
   val dateTime1: DateTime = ...
   val dateTime2: DateTime = ...
